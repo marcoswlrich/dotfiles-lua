@@ -1,0 +1,10 @@
+require('plugins')
+require('options')
+require('keybindings')
+require('nvim-tree-config')
+require('treesitter-config')
+require('autopairs-config')
+vim.cmd('colorscheme nord')
+require('lualine-config')
+require('bufferline-config')
+
