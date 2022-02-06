@@ -16,6 +16,7 @@ return require('packer').startup(function()
    use {'windwp/nvim-ts-autotag'}
    use {'p00f/nvim-ts-rainbow'}
    use {'windwp/nvim-autopairs'}
+   use {'folke/which-key.nvim'}
   -- You can alias plugin names
   --use {'dracula/vim', as = 'dracula'}
 end)
