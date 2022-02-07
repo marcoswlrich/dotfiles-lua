@@ -17,6 +17,10 @@ return require('packer').startup(function()
    use {'p00f/nvim-ts-rainbow'}
    use {'windwp/nvim-autopairs'}
    use {'folke/which-key.nvim'}
+   use {
+    'nvim-telescope/telescope.nvim',
+    requires = {{'nvim-lua/plenary.nvim'}}
+  }
   -- You can alias plugin names
   --use {'dracula/vim', as = 'dracula'}
 end)
