@@ -104,6 +104,7 @@ return require('packer').startup(function()
   use {'glepnir/dashboard-nvim'}
   use {"lukas-reineke/indent-blankline.nvim"}
   use {"akinsho/toggleterm.nvim"}
+  use {"terrortylor/nvim-comment"}
   -- You can alias plugin names
   --use {'dracula/vim', as = 'dracula'}
 end)
