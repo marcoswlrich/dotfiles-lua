@@ -74,6 +74,12 @@ _G.packer_plugins = {
     path = "/home/marcoswlrich/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  catppuccin = {
+    config = { "\27LJ\2\2Ü\5\0\0\a\0\18\0\0236\0\0\0'\1\1\0B\0\2\0029\1\2\0004\2\3\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0005\5\a\0005\6\b\0=\6\t\0055\6\n\0=\6\v\5=\5\f\0045\5\r\0=\5\14\0045\5\15\0=\5\16\4=\4\17\3>\3\1\2B\1\2\1K\0\1\0\17integrations\21indent_blankline\1\0\2\fenabled\1\26colored_indent_levels\1\rnvimtree\1\0\2\fenabled\2\14show_root\2\15native_lsp\15underlines\1\0\4\16information\14underline\rwarnings\14underline\verrors\14underline\nhints\14underline\17virtual_text\1\0\4\16information\vitalic\rwarnings\vitalic\verrors\vitalic\nhints\vitalic\1\0\1\fenabled\2\1\0\17\15treesitter\2\14vim_sneak\1\15lightspeed\1\14which_key\1\14dashboard\1\16lsp_trouble\1\rmarkdown\1\rgitsigns\1\15bufferline\1\vbarbar\1\bhop\1\rlsp_saga\1\tfern\1\15ts_rainbow\1\14telescope\1\vneogit\1\14gitgutter\1\vstyles\1\0\5\rcomments\vitalic\14variables\tNONE\14functions\vitalic\rkeywords\vitalic\fstrings\tNONE\1\0\3\17transparency\2\16colorscheme\21dark_catppuccino\16term_colors\1\nsetup\15catppuccin\frequire\0" },
+    loaded = true,
+    path = "/home/marcoswlrich/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/marcoswlrich/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -93,6 +99,22 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/marcoswlrich/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/marcoswlrich/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
+  ["gitsigns.nvim"] = {
+    config = { "\27LJ\2\2Q\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\1\23current_line_blame\2\nsetup\rgitsigns\frequire\0" },
+    loaded = true,
+    path = "/home/marcoswlrich/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/marcoswlrich/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -118,6 +140,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/marcoswlrich/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/marcoswlrich/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -169,6 +196,11 @@ _G.packer_plugins = {
     path = "/home/marcoswlrich/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/marcoswlrich/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/marcoswlrich/.local/share/nvim/site/pack/packer/start/vim-vsnip",
@@ -187,6 +219,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: catppuccin
+time([[Config for catppuccin]], true)
+try_loadstring("\27LJ\2\2Ü\5\0\0\a\0\18\0\0236\0\0\0'\1\1\0B\0\2\0029\1\2\0004\2\3\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0005\5\a\0005\6\b\0=\6\t\0055\6\n\0=\6\v\5=\5\f\0045\5\r\0=\5\14\0045\5\15\0=\5\16\4=\4\17\3>\3\1\2B\1\2\1K\0\1\0\17integrations\21indent_blankline\1\0\2\fenabled\1\26colored_indent_levels\1\rnvimtree\1\0\2\fenabled\2\14show_root\2\15native_lsp\15underlines\1\0\4\16information\14underline\rwarnings\14underline\verrors\14underline\nhints\14underline\17virtual_text\1\0\4\16information\vitalic\rwarnings\vitalic\verrors\vitalic\nhints\vitalic\1\0\1\fenabled\2\1\0\17\15treesitter\2\14vim_sneak\1\15lightspeed\1\14which_key\1\14dashboard\1\16lsp_trouble\1\rmarkdown\1\rgitsigns\1\15bufferline\1\vbarbar\1\bhop\1\rlsp_saga\1\tfern\1\15ts_rainbow\1\14telescope\1\vneogit\1\14gitgutter\1\vstyles\1\0\5\rcomments\vitalic\14variables\tNONE\14functions\vitalic\rkeywords\vitalic\fstrings\tNONE\1\0\3\17transparency\2\16colorscheme\21dark_catppuccino\16term_colors\1\nsetup\15catppuccin\frequire\0", "config", "catppuccin")
+time([[Config for catppuccin]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\2Q\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\1\23current_line_blame\2\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
 if should_profile then save_profiles() end
 
 end)
