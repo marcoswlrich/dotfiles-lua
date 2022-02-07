@@ -1,4 +1,4 @@
-return require('packer').startup(function()
+return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use 'shaunsingh/nord.nvim'
@@ -65,7 +65,7 @@ return require('packer').startup(function()
       end
     }
   use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate"}
-  use {
+   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
@@ -105,6 +105,8 @@ return require('packer').startup(function()
   use {"lukas-reineke/indent-blankline.nvim"}
   use {"akinsho/toggleterm.nvim"}
   use {"terrortylor/nvim-comment"}
+  use {'tami5/lspsaga.nvim'}
+  use {'jose-elias-alvarez/null-ls.nvim'}
   -- You can alias plugin names
   --use {'dracula/vim', as = 'dracula'}
 end)
