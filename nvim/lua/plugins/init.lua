@@ -13,14 +13,24 @@ return require('packer').startup(function()
     requires = 
       'kyazdani42/nvim-web-devicons'
   }
-   use {'windwp/nvim-ts-autotag'}
-   use {'p00f/nvim-ts-rainbow'}
-   use {'windwp/nvim-autopairs'}
-   use {'folke/which-key.nvim'}
-   use {
+  use {'windwp/nvim-ts-autotag'}
+  use {'p00f/nvim-ts-rainbow'}
+  use {'windwp/nvim-autopairs'}
+  use {'folke/which-key.nvim'}
+  use {
     'nvim-telescope/telescope.nvim',
     requires = {{'nvim-lua/plenary.nvim'}}
   }
+  use {'neovim/nvim-lspconfig'}
+  use {'hrsh7th/cmp-nvim-lsp'}
+  use {'hrsh7th/cmp-buffer'}
+  use {'hrsh7th/cmp-path'}
+  use {'hrsh7th/cmp-cmdline'}
+  use {'hrsh7th/nvim-cmp'}
+  use {'hrsh7th/vim-vsnip'}
+  use {'hrsh7th/vim-vsnip-integ'}
+  
+  use {'onsails/lspkind-nvim'}
   -- You can alias plugin names
   --use {'dracula/vim', as = 'dracula'}
 end)
