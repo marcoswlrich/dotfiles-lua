@@ -3,14 +3,15 @@
 local catppuccin = require("catppuccin")
 
 -- configure it
-catppuccin.setup({transparent_background = false,
+catppuccin.setup({colorscheme = "dark_catppuccino",
+transparent_background = false,
 term_colors = false,
 styles = {
 	comments = "italic",
 	functions = "italic",
 	keywords = "italic",
 	strings = "NONE",
-	variables = "italic",
+	variables = "NONE",
 },
 integrations = {
 	treesitter = true,
@@ -30,19 +31,20 @@ integrations = {
 		},
 	},
 	lsp_trouble = false,
-	cmp = true,
+        lsp_saga = false,
+	cmp = false,
 	lsp_saga = false,
 	gitgutter = false,
 	gitsigns = true,
-	telescope = true,
+	telescope = false,
 	nvimtree = {
 		enabled = true,
-		show_root = false,
+		show_root = true,
 		transparent_panel = false,
 	},
 	which_key = false,
 	indent_blankline = {
-		enabled = true,
+		enabled = false,
 		colored_indent_levels = false,
 	},
 	dashboard = true,
@@ -50,7 +52,7 @@ integrations = {
 	vim_sneak = false,
 	fern = false,
 	barbar = false,
-	bufferline = true,
+	bufferline = false,
 	markdown = true,
 	lightspeed = false,
 	ts_rainbow = false,
