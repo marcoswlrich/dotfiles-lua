@@ -6,9 +6,36 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] =
     })
 
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = {"html", "javascript", "lua"},
+  ensure_installed = {
+    'bash',
+    'c',
+    'comment',
+    'css',
+    'dockerfile',
+    'fish',
+    'go',
+    'gomod',
+    'graphql',
+    'html',
+    'javascript',
+    'jsdoc',
+    'json',
+    'jsonc',
+    'lua',
+    'markdown',
+    'python',
+    'query',
+    'regex',
+    'scss',
+    'tsx',
+    'typescript',
+    'vim',
+    'vue',
+    'yaml',
+  },
   highlight = {enable = true, additional_vim_regex_highlighting = false},
   autotag = {enable = true},
+  indent = {enable = true},
   rainbow = {
     enable = true,
     extended_mode = false, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
