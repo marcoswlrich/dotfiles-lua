@@ -45,6 +45,7 @@ return require('packer').startup(function(use)
   use {"akinsho/toggleterm.nvim"}
   use {"terrortylor/nvim-comment"}
   use {'tami5/lspsaga.nvim'}
-  -- You can alias plugin names
+   use {'jose-elias-alvarez/null-ls.nvim'}
+  
   --use {'dracula/vim', as = 'dracula'}
 end)
